@@ -1,0 +1,266 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+<style>
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote {
+    margin: 0;
+    padding: 0;
+}
+body {
+    font-family: "Helvetica Neue", Helvetica, "Hiragino Sans GB", Arial, sans-serif;
+    font-size: 13px;
+    line-height: 18px;
+    color: #737373;
+    background-color: white;
+    margin: 10px 13px 10px 13px;
+}
+table {
+	margin: 10px 0 15px 0;
+	border-collapse: collapse;
+}
+td,th {	
+	border: 1px solid #ddd;
+	padding: 3px 10px;
+}
+th {
+	padding: 5px 10px;	
+}
+
+a {
+    color: #0069d6;
+}
+a:hover {
+    color: #0050a3;
+    text-decoration: none;
+}
+a img {
+    border: none;
+}
+p {
+    margin-bottom: 9px;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    color: #404040;
+    line-height: 36px;
+}
+h1 {
+    margin-bottom: 18px;
+    font-size: 30px;
+}
+h2 {
+    font-size: 24px;
+}
+h3 {
+    font-size: 18px;
+}
+h4 {
+    font-size: 16px;
+}
+h5 {
+    font-size: 14px;
+}
+h6 {
+    font-size: 13px;
+}
+hr {
+    margin: 0 0 19px;
+    border: 0;
+    border-bottom: 1px solid #ccc;
+}
+blockquote {
+    padding: 13px 13px 21px 15px;
+    margin-bottom: 18px;
+    font-family:georgia,serif;
+    font-style: italic;
+}
+blockquote:before {
+    content:"\201C";
+    font-size:40px;
+    margin-left:-10px;
+    font-family:georgia,serif;
+    color:#eee;
+}
+blockquote p {
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 18px;
+    margin-bottom: 0;
+    font-style: italic;
+}
+code, pre {
+    font-family: Monaco, Andale Mono, Courier New, monospace;
+}
+code {
+    background-color: #fee9cc;
+    color: rgba(0, 0, 0, 0.75);
+    padding: 1px 3px;
+    font-size: 12px;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    border-radius: 3px;
+}
+pre {
+    display: block;
+    padding: 14px;
+    margin: 0 0 18px;
+    line-height: 16px;
+    font-size: 11px;
+    border: 1px solid #d9d9d9;
+    white-space: pre-wrap;
+    word-wrap: break-word;
+}
+pre code {
+    background-color: #fff;
+    color:#737373;
+    font-size: 11px;
+    padding: 0;
+}
+sup {
+    font-size: 0.83em;
+    vertical-align: super;
+    line-height: 0;
+}
+* {
+	-webkit-print-color-adjust: exact;
+}
+@media screen and (min-width: 914px) {
+    body {
+        width: 854px;
+        margin:10px auto;
+    }
+}
+@media print {
+	body,code,pre code,h1,h2,h3,h4,h5,h6 {
+		color: black;
+	}
+	table, pre {
+		page-break-inside: avoid;
+	}
+}
+</style>
+<title>Monitoring à l'heure de Devops et BigData</title>
+
+</head>
+<body>
+<h1>Monitoring à l'heure de Devops et BigData</h1>
+
+<p>J'ai participé au Breizhcamp cette année avec une présentation sur le monitoring.</p>
+
+<p>Au passage merci aux organisateurs pour cette édition 2014. Les conférences sont toujours l'occasion de discussions passionnées sur les sujets les plus chaud du moment et puis c'est cool finalement de pouvoir assister à des conférences sans rien avoir à faire. Bravo aussi à l'initiative de faire un repas ouvert à tous le jeudi soir. On a ainsi pu partager les discussions passionnéees des speaker diners avec d'autres passionnés.</p>
+
+<p><br></p>
+
+<p>Le but ce cette présentation est de revoir un peu nos idées reçues sur le monitoring. Même si le sujet n'est pas forcément très hype, Lean et Devops changent notre vision des mesures et les outils BigData viennent à notre secours.</p>
+
+<p>La présentation se trouve <a href="http://fr.slideshare.net/claude.falguiere/pres-monitoring-v2">là</a>.</p>
+
+<div align="center" style="margin-bottom:20px">
+[slideshare id=35058219&doc=pres-monitoringv2-140523152751-phpapp02&w=300]
+</div>
+
+
+<p><a href="https://twitter.com/seb_brousse">Sébastien Brousse</a> a twitté sur une partie de la présentation où je fais un détour par la <strong>matière noire</strong>. Je pense que le rapport avec le monitoring est peu évident sans les explications que j'ai donné de vive voix et le <a href="http://www.slideshare.net/claude.falguiere/pres-monitoring-v2">slide</a> ne vous sera pas forcément d'une grande aide.</p>
+
+<p>Pour ceux qui n'étaient là en attendant la vidéo voici les explications et même quelques infos supplémentaires.</p>
+
+<h2>Mais pourquoi la matière noire ?</h2>
+
+<p>Non, je n'ai pas changé de métier, la présentation parlait bien de <strong>monitoring</strong>.</p>
+
+<p>Tout d'abord il y a peu de <strong>femmes dans l'informatique</strong> et donc dans les conférences, et c'était l'occasion d'avoir deux grandes dames avec nous, <a href="http://en.wikipedia.org/wiki/Margaret_Burbidge">Margaret Burbidge</a> et <a href="http://en.wikipedia.org/wiki/Vera_Rubin">Vera Rubin</a>, deux astrophysiciennes.</p>
+
+<p>La première a imaginé <strong>le concept de matière noire</strong>, la seconde a poursuivi les travaux et mis au point <strong>une méthode pour prouver son existence</strong>.</p>
+
+<p>Nous on est n'est pas des astrophysiciens, je vais rester à un niveau assez général. Pour les détails, sur la <a href="http://fr.wikipedia.org/wiki/Mati%C3%A8re_noire">matière noire</a> je vous renvoie à <a href="http://fr.wikipedia.org/wiki/Mati%C3%A8re_noire">Wikipedia</a>.</p>
+
+<h2>Des galaxies prises en excès de vitesse</h2>
+
+<div style="float:left;margin-right:15px; margin-bottom:15px;margin-top:5px">
+<img src="https://cfalguiere.files.wordpress.com/2014/05/pia04224_ip_web_square.jpg" style="width:150px;height:150px"/>
+</div>
+
+
+<p>Cette découverte a un rapport avec le monitoring  parce que tout ça découle de <strong>problèmes de mesure</strong>.</p>
+
+<p>Les astronomes avait constaté depuis longtemps que les <strong>galaxies spirales tournaient trop vite</strong> par rapport à la <strong>masse</strong> qu'elles sont supposées avoir d'après les mesures.</p>
+
+<p>Plusieurs hypothèses ont été avancées pour expliquer cette bizarrerie en particulier l'imprécision des mesures.</p>
+
+<p>Dans les années 1970, <a href="http://en.wikipedia.org/wiki/Margaret_Burbidge">Margaret Burbidge</a> a refait les mesures avec toute la précision des moyens de l'époque. Et là, ça ne collait toujours pas.</p>
+
+<p>Plutôt que de remettre en cause les mesures, <a href="http://en.wikipedia.org/wiki/Margaret_Burbidge">Margaret Burbidge</a>  a <strong>remis en cause le raisonnenment</strong>. Si la vitesse ne colle pas avec la masse, c'est que <strong>la masse n'est pas celle que l'on pense</strong>.</p>
+
+<p>A cette époque on <strong>évalue la masse</strong> à partir des objets que l'on peut <strong>observer au téléscope</strong>, donc ceux qu'on peut voir parce qu'ils émettent de la <strong>lumière</strong>. Par conséquent, elle en a déduit qu'il y a dans les galaxies quelque chose <strong>qui a une masse</strong> mais que l'on ne voit pas parce que ça <strong>n'émet pas de lumière</strong>. C'est le concept de <strong>matière noire</strong>.</p>
+
+<div style="float:right;margin-left:15px; margin-bottom:15px">
+<img src="https://cfalguiere.files.wordpress.com/2014/05/mwart_spitzer_c42_ap050825_web_square.jpg" style="width:150px;height:150px"/>
+</div>
+
+
+<p><a href="http://en.wikipedia.org/wiki/Vera_Rubin">Vera Rubin</a> qui travaillait avec Margaret Burbidge a apporté des éléments de preuve en mettant au point <strong>une méthode de calcul de la masse</strong> basée sur l'<strong>influence gravitationnelle</strong> de la galaxie sur son environnement, ce qu'on appelle la <strong>masse dynamique</strong>. A la différence de la masse lumineuse, la masse dynamique est <strong>compatible avec la vitesse de rotation</strong> des galaxie spirales. Et la masse dynamique basée directement sur l'effet de la masse n'a pas de raison d'être fausse, ce qui justifie qu'il y a un <strong>élément non visible ayant une masse</strong>.</p>
+
+<h2>Bon, d'accord mais moi je mesure des requêtes HTTP</h2>
+
+<div style="float:left;margin-right:15px; margin-bottom:15px;margin-top:5px">
+<img src="https://cfalguiere.files.wordpress.com/2014/05/m81loop_miller_960_ap130416_web.jpg" style="height:150px"/>
+</div>
+
+
+<p>Ok, nous on ne mesure pas des galaxies, mais même si on peut parfois regarder le serveur, enfin la boîte, finalement ce qu'on mesure est tout aussi <strong>peu visualisable</strong>.</p>
+
+<p>Cette histoire montre que c'est important de <strong>mesurer de la bonne manière</strong>.</p>
+
+<p>Si on mesure des <strong>effets indirects</strong>, on est dépendant d'un <strong>modèle</strong>. Ce modèle c'est l'idée qu'on se fait du fonctionnement du système et il peut être faux.</p>
+
+<p>Dans un certain nombre de cas, cette mesure indirecte marche, par exemple la masse lumineuse convient pour les objets très lumineux comme les étoiles. Mais de temps en temps, ça ne marche pas.</p>
+
+<p>Bien sûr, on n'a pas toujours la possibilité de mesurer l'effet direct, et de temps en temps on doit se baser sur une mesure indirecte parce que c'est plus <strong>abordable</strong>. Dans ce cas il faut rester vigilant, et savoir remettre en cause le modèle qu'on se fait du système.</p>
+
+<h2>Notre matière noire</h2>
+
+<div align="center">
+<div style="margin-bottom:15px;margin-top:15px;margin-top:5px">
+<img src="https://cfalguiere.files.wordpress.com/2014/05/eso510_hst_960_web_bandeau.jpg" style="height:150px"/>
+</div>
+</div>
+
+
+<p>Qu'est ce que c'est <strong>notre matière noire</strong> à nous les informaticiens ?</p>
+
+<p>Ce sont les <strong>caches</strong>, les <strong>buffers</strong>, les <strong>load balancers</strong>, les <strong>heuristiques</strong> sur les files d'attente, les <strong>optimisations</strong> de JVM, tout un tas de <strong>mécanismes internes</strong> au système qui le rendent plus performant, mais qui font aussi que certaines de nos mesures ont un comportement erratique ou n'ont plus de sens dans certaines situations.</p>
+
+<p>Au final, mesurer correctement les performances d'un système ou d'une application informatiques est une activité qui réserve toujours des <strong>surprises</strong>. On ne peut pas se contenter de poser des sondes au petit bonheur la chance sans comprendre ce qu'on fait. Il faut <strong>comprendre</strong> le système et comment il <strong>fonctionne</strong> pour le mesure correctement.</p>
+
+<p>On a un peu plus de chances, en cas de doute on peut souvent se reporter à la <strong>documentation</strong> (quoique à la réflexion pas toujours) ou demander au <strong>développeur</strong> (enfin des fois … ).</p>
+
+<p>Mais par contre, un cache c'est <strong>beaucoup moins beau</strong> sur les photos qu'une <strong>galaxie spirale</strong>.</p>
+
+<div align="center">
+<img src="https://cfalguiere.files.wordpress.com/2014/05/ap030310_web_square.jpg" style="margin-left:auto;
+margin-right:auto;width:300px;height:300px"/>
+</div>
+
+
+
+
+<p><div style="clear:both"/></p>
+
+<p><div style="margin-top:20px">
+Les images proviennent toutes de la <a href="http://www.nasa.gov/multimedia/imagegallery/">galerie d'images de la Nasa</a>.
+</div></p>
+</body>
+</html>
