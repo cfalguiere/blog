@@ -1,0 +1,14 @@
+<img src="icons.png" width="820" height="170" border="0" usemap="#map" />
+
+<map name="map">
+<!-- #$-:Image map file created by GIMP Image Map plug-in -->
+<!-- #$-:GIMP Image Map plug-in by Maurits Rijk -->
+<!-- #$-:Please do not edit lines starting with "#$" -->
+<!-- #$VERSION:2.3 -->
+<!-- #$AUTHOR:Claude FALGUIERE -->
+<area shape="rect" coords="9,8,160,159" href="url1" />
+<area shape="rect" coords="329,8,484,161" href="url3" />
+<area shape="rect" coords="492,7,641,160" href="url4" />
+<area shape="rect" coords="167,8,320,161" href="url2" />
+<area shape="rect" coords="650,9,803,159" href="url5" />
+</map>
